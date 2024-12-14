@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      type="text/css" />
+   <link rel="stylesheet" type="text/css" href="./style.css" />
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+   <title>SPA semplice</title>
+</head>
+
+<body>
+   <div id="container" class="container">
+      <div id="pagina1" class="page">
+         <div class="row"><b>Questo è il contenuto di SOA</b>
+            <p>L'architettura web 2.0 introduce dinamismo e condivisione tra utenti, ma resta ancorata all'idea che i client siano dei browser che girano su computer con potenza limitata. Come sappiamo oggi non è così: i pc di oggi hanno potenze significative, hanno funzionalità molto variebage e poi non esistono più solo i pc. Oggi il dispositivo più diffuso al mondo è lo smartphone e ad esso si affiancano parecchi tipi di dispositivi “connessi”, come i wearable, le smartTV, i dispositivi di realtà aumentata, la domotica, l’IoT industriale. Che siano computer o no, questi dispositivi non usano il web solo per “navigare”, ma hanno app dedicate a svolgere una molteplicità di funzioni: streaming audio e video, giochi, produzione di contenuti, effettuare video comunicazioni, ecc. il browser diventa quindi una funzione addirittura minoritaria rispetto alle applicazioni possibili della connettività. E quindi il modello web 2.0 è poco funzionale a questo tipo di applicazioni.</p>
+         </div>
+         <div class="row"><a href="#pagina2">Questo è un link a SPA</a></div>
+         <div class="row"><a href="#pagina3">Questo è un link a PROMISE</a></div>                  
+      </div>
+      <div id="pagina2" class="page">
+         <div class="row"><a href="#pagina1">Questo è un link a SOA</a></div>
+         <div class="row"><b>Questo è il contenuto di SPA</b>
+            <p>Una Single Page Application è una applicazione Web Javascript composta da una sola pagina html, ma che può comprendere diverse pagine visualizzabili dall'utente.In pratica anzichè utilizzare il sistema tradizionale per cui ad ogni pagina Web corrisponde una pagina HTML con un eventuale Javascript associato, viene caricata una sola pagina, ed è il programma Javascript a mostrare (o nascondere) dinamicamente la singola pagina dell'applicazione attualmente visualizzata.
+
+                Il grosso vantaggio di questo tipo di applicazione è che il caricamento della pagina è praticamente istantaneo (nessuna latenza) e questo da all'utente la percezione non di navigare su un sito ma di utilizzare una applicazione locale, dove l'utilizzo della rete è ridotto al solo di scambio di dati col server.
+                
+                Il meccanismo più semplice per gestire una SPA è attraverso la creazione di “pagine logiche” definite da un tag specifico (ad esempio div) all'interno della pagina HTML e poi realizzare un componente JS con il ruolo di “navigatore”, che secondo regole ben definite, mostra in ogni momento una sola di queste pagine.</p>
+         </div>         
+         <div class="row"><a href="#pagina3">Questo è un link a pagina 3</a></div>                  
+      </div>
+      <div id="pagina3" class="page">         
+         <div class="row"><a href="#pagina1">Questo è un link a SOA</a></div>
+         <div class="row"><a href="#pagina2">Questo è un link a SPA </a></div>                  
+         <div class="row"><b>Questo è il contenuto di PROMISE</b>
+            <p>Le promise sono oggetti che vengono utilizzati per eseguire attività che richiedono un certo tempo e che quindi non possono restituire subito un risultato. Quindi per non bloccare l'interfaccia utente della pagina web, la promise costituisce uno strumento per permettere la programmatore di indicare sia l'attività da svolgere sia la callback da eseguire in caso di conclusione che quella da eseguire in caso di errore dell'attività.
+
+                Una volta creata la promise, questa mette a disposizione due metodi:
+                
+                1. then(successCallback): questo metodo dopo aver eseguito l'operazione contenuta nella promise mette in coda la funzione passata come parametro (detta success callback)
+                
+                2. catch(errorCallback): indica la funzione che viene invece eseguita se c'è stato un errore.</p>
+        </div>
+      </div>
+   </div>
+   <script type="module" src="./index.js"></script>
+
+</body>
+
+</html>
